@@ -10,8 +10,9 @@
 		770CD34C1AE22AE500FEA046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770CD34B1AE22AE500FEA046 /* AppDelegate.swift */; };
 		770CD34E1AE22AE500FEA046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770CD34D1AE22AE500FEA046 /* ViewController.swift */; };
 		770CD3501AE22AE500FEA046 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770CD34F1AE22AE500FEA046 /* Images.xcassets */; };
-		770CD3531AE22AE500FEA046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770CD3511AE22AE500FEA046 /* Main.storyboard */; };
 		770CD35F1AE22AE500FEA046 /* TrackMixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770CD35E1AE22AE500FEA046 /* TrackMixTests.swift */; };
+		7722FD1D1AE2C238003C9C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7722FD1C1AE2C238003C9C6A /* Main.storyboard */; };
+		77FFBACC1AE23DA00067D9C6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFBACB1AE23DA00067D9C6 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +31,11 @@
 		770CD34B1AE22AE500FEA046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		770CD34D1AE22AE500FEA046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		770CD34F1AE22AE500FEA046 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		770CD3521AE22AE500FEA046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		770CD3581AE22AE500FEA046 /* TrackMixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackMixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		770CD35D1AE22AE500FEA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770CD35E1AE22AE500FEA046 /* TrackMixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMixTests.swift; sourceTree = "<group>"; };
+		7722FD1C1AE2C238003C9C6A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		77FFBACB1AE23DA00067D9C6 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,11 @@
 		770CD3481AE22AE400FEA046 /* TrackMix */ = {
 			isa = PBXGroup;
 			children = (
+				7722FD1C1AE2C238003C9C6A /* Main.storyboard */,
 				770CD34B1AE22AE500FEA046 /* AppDelegate.swift */,
 				770CD34D1AE22AE500FEA046 /* ViewController.swift */,
+				77FFBACB1AE23DA00067D9C6 /* Track.swift */,
 				770CD34F1AE22AE500FEA046 /* Images.xcassets */,
-				770CD3511AE22AE500FEA046 /* Main.storyboard */,
 				770CD3491AE22AE500FEA046 /* Supporting Files */,
 			);
 			path = TrackMix;
@@ -190,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770CD3501AE22AE500FEA046 /* Images.xcassets in Resources */,
-				770CD3531AE22AE500FEA046 /* Main.storyboard in Resources */,
+				7722FD1D1AE2C238003C9C6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +213,7 @@
 			files = (
 				770CD34E1AE22AE500FEA046 /* ViewController.swift in Sources */,
 				770CD34C1AE22AE500FEA046 /* AppDelegate.swift in Sources */,
+				77FFBACC1AE23DA00067D9C6 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +234,6 @@
 			targetProxy = 770CD3591AE22AE500FEA046 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		770CD3511AE22AE500FEA046 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				770CD3521AE22AE500FEA046 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		770CD3601AE22AE500FEA046 /* Debug */ = {
@@ -400,6 +393,7 @@
 				770CD3641AE22AE500FEA046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		770CD3651AE22AE500FEA046 /* Build configuration list for PBXNativeTarget "TrackMixTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +402,7 @@
 				770CD3671AE22AE500FEA046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
